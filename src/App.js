@@ -1,10 +1,7 @@
-import logo from './logo.svg';
 import title from './Title.png'
 import floor from './floor-level.png'
 import over from './default-view.png'
 import over2 from './default-view-2.png'
-import tv from './tv.mp4'
-import ReactPlayer from 'react-player'
 import './App.css';
 
 function App() {
@@ -18,7 +15,8 @@ function App() {
         </div>
       </header>
       <div className='video'>
-        <video controls src={tv} type="video/mp4"/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CaoJBpe-n8c" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen/>
       </div>
         <div className='pictureBox'>
           <img className='img' alt="Alien Defence's Title view" src={title}/>
